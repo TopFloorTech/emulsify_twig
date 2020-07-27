@@ -53,6 +53,19 @@ This creates:
 
 `<h1 class="title js-click">`
 
+### SUIT Twig Extension
+
+The SUIT function works exactly like the BEM function, but the format of the resulting classes follows the SUIT CSS methodology.
+
+#### For example, an element with modifiers, block name (component), and extra classes:
+
+`<h1 {{ suit('title', ['small', 'red'], 'Card', ['js-click', 'something-else']) }}>`
+
+This creates:
+
+`<h1 class="Card-title Card-title--small Card-title--red js-click something-else">`
+
+
 ### Add Attributes Twig Extension
 
 Twig function that merges with template level attributes in Drupal and prevents them from trickling down into includes.
